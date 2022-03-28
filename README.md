@@ -18,3 +18,6 @@ pip install tika
 # Running
 Then run `get_test_data.py` to fetch all the urls in `test_data.txt` and run `parse.py` to pass each one through tika and extract content & metadata.
 
+# Next Steps
+
+Try tagging some data with https://github.com/ieriii/spacy-annotator ? 
