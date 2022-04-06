@@ -1,2 +1,7 @@
 .idea
 pdfs/*
+*/__pycache__/*
+training/output/*
+.ipynb_checkpoints/*
+training/*.spacy
+training/config.cfg
