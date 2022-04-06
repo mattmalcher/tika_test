@@ -14,12 +14,21 @@ so - in a new virtualenv:
 
 
 ```commandline
-python3 -m virtualenv env
+make setup_env
+make setup_deps
 source env/bin/activate
-pip install tika
-pip install jupyter notebook
-pip install spacy-annotator
+```
+
+Then
+
+```commandline
 jupyter notebook
+```
+
+or
+
+```commandline
+make train
 ```
 
 # Running
@@ -27,4 +36,15 @@ Then run `get_test_data.py` to fetch all the urls in `test_data.txt` and run `pa
 
 # Next Steps
 
-Try tagging some data with https://github.com/ieriii/spacy-annotator ? 
+* NER
+    - Tag more data?
+    - Split into test/train?
+    - Try different tagging schemes?
+
+* Look at data collection opportunities?
+* Try out networks / visualisations?
+
+
+# TODO's
+
+* Get spacy training on GPU going
