@@ -11,12 +11,13 @@ def get_match_obj(pattern, doc, window=(100, 50)):
         print(f"match: '{i.group(0)}' position: {i.start()}-{i.end()} ")
         match_txt = get_window(doc, i.start(), i.end(), window=window)
         print(match_txt)
-        matches.extend([i, match_txt])
+
+        matches.extend([[i, match_txt]])
 
     return matches
 
 
-def get_window(doc, pos_start, pos_end, window=(100,50)):
+def get_window(doc, pos_start, pos_end, window=(100, 50)):
 
     w_start = max(0, pos_start - window[0])
 
